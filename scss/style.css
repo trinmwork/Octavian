@@ -1014,7 +1014,11 @@ a {
   position: relative;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+}
+@media (max-width: 479px) {
+  .about__content .container {
+    flex-direction: column;
+  }
 }
 .about__content-app {
   width: 37rem;
