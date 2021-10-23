@@ -324,8 +324,10 @@ a {
     width: 5rem;
   }
 }
-.nav__icon-item:last-child {
-  display: none;
+@media (max-width: 479px) {
+  .nav__icon-item:last-child {
+    display: none;
+  }
 }
 
 .header {

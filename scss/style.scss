@@ -1,18 +1,20 @@
-@import "./variables";
-@import "./mixin";
-
+// Biến
+@import "./abstracts/variables";
+// mixin
+@import "./abstracts/mixin";
+// reset
 @import "./base/reset";
-
-@import "./components";
+// btn chung
+@import "./components/components";
 
 // layout
-@import "./nav";
-@import "./header";
-@import "./priority";
-@import "./tool";
-@import "./application";
-@import "./available";
-@import "./reviews";
-@import "./protect";
-@import "./about";
-@import "./footer";
+@import "./layouts/nav";
+@import "./layouts/header";
+@import "./layouts/priority";
+@import "./layouts/tool";
+@import "./layouts/application";
+@import "./layouts/available";
+@import "./layouts/reviews";
+@import "./layouts/protect";
+@import "./layouts/about";
+@import "./layouts/footer";

@@ -168,7 +168,9 @@
         }
 
         &-item:last-child{
-            display: none;
+            @include mobile {
+                display: none;
+            }
         }
     }
 }
