@@ -1,0 +1,80 @@
+.application{
+    margin-bottom: 20rem;
+    @include mobile{
+        margin-bottom: 3rem;
+    }
+    &__header{
+        width: 57rem;
+        @include mobile{
+            width: 100%;
+            
+        }
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 9.5rem;
+        &-title{
+            margin-bottom: 4rem;
+            @include mobile{
+                margin-bottom: 2rem;
+            }
+        }
+        &-desc{
+            line-height: 2;
+        }
+    }
+    &__slider{
+        margin: 0 auto;
+        max-width: 169rem;
+
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile{
+            width: 100%;
+        }
+        &-item{
+            @include mobile{
+                width: 80%;
+                text-align: center;
+            }
+            img{
+                @include mobile{
+                    width: 90%;
+                    object-fit: cover;
+                }
+                
+            }
+            &--fist{ 
+                @include mobile{
+                    width: 80%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        &-item:first-child{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            
+                
+        }
+        &-item:nth-child(4){
+            margin: 0 auto;
+        }
+        &-item:nth-child(6),
+        &-item:nth-child(5),
+        &-item:nth-child(3),
+        &-item:nth-child(2){
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+}

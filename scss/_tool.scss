@@ -1,0 +1,79 @@
+.tool{
+    .container{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20rem;
+        @include mobile{
+            flex-direction: column-reverse;
+            margin-bottom: 5rem;
+        }
+    }
+    &__content{
+        &-item{
+            display: flex;
+        }
+
+        &-header{
+            margin-bottom: 9rem;
+            @include mobile{
+                margin-bottom: 2rem;
+                margin-top: 3rem;
+            }
+        }
+
+        &-body{
+            margin-bottom: 6.5rem;
+            @include mobile{
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-title{
+            font-family: $fontRaleway;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            @include mobile{
+                font-size: $sizedesc18;
+            }
+        }
+
+        &-desc{
+            font-size: $sizedesc18;
+            font-family: $fontOpenSans;
+            @include mobile{
+                font-size: 16px;
+            }
+        }
+
+        &-icon{
+            i{
+                padding-top: 0.3rem;
+                font-size: 1.8rem;
+                color: $primaryColor;
+                margin-right: 2.5rem;
+                @include mobile{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &-btn{
+            text-align: center;
+        }
+    }
+
+    &__img{
+        margin-right: -4.5rem;
+        height: 70rem;
+        @include mobile{
+            width: 100%;
+            height: auto;
+            margin-right: 0;
+        }
+        &-item{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

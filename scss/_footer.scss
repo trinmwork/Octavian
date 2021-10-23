@@ -1,0 +1,24 @@
+.footer{
+    background-color: #252b36;
+    
+    .container{
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    @include mobile{
+        height: 10rem;
+    }
+    }
+    &__desc{
+        font-family: $fontOpenSans;
+        font-size: 1.6rem;
+        color: #a0a8b5;
+        span{
+            color: white;
+        }
+        @include mobile{
+            line-height: 1.5;
+            font-size: 12px;
+        }
+    }
+}

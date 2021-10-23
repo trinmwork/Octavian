@@ -1,0 +1,86 @@
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20rem;
+    overflow: hidden;
+    @include mobile{
+        margin-bottom: 8rem;
+    }
+    &__content{
+        text-align: center;
+        width: 57rem;
+        margin-bottom: 8rem;
+
+        @include mobile{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        &-title{
+            margin-bottom: 4.5rem;
+            @include mobile{
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-desc{
+            font-size: $sizedesc18;
+            font-family: $fontOpenSans;
+            line-height: 1.8;
+            @include mobile{
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__slider{
+        &-main{
+            display: flex;
+        }
+        &-items{
+            width: 63rem;
+            @include mobile{
+                width: 100%;
+            }
+        }
+        &-item{
+            width: 63rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            @include mobile{
+                width: 100%;
+            }
+        }
+        
+        &-icon{
+            margin-bottom: 4rem;
+            img{
+                margin: 0 auto;
+            }
+        }
+        &-cmt{
+            font-size: 3rem;
+            font-family: $fontOpenSans;
+            line-height: 1.8;
+            margin-bottom: 5rem;
+            span{
+                font-weight: bold;
+            }
+            @include mobile{
+                font-size: 2rem;
+            }
+        }
+        &-avt{
+            margin-bottom: 2.5rem;
+            img{
+                margin: 0 auto;
+            }
+        }
+        &-name{
+            font-family: $fontRaleway;
+            font-size: $sizedesc18;
+        }
+    }
+}

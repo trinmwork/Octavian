@@ -1,0 +1,83 @@
+.btn{
+    border: none;
+    font-family: $fontOpenSans;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.btn--primary{
+    background-color: $primaryColor;
+    color: $white;
+    width: 23rem;
+    height: 5.5rem;
+}
+
+.btn--second{
+    background-color: $btnSliderColor;
+    color: $primaryColor;
+    height: 6.5rem;
+    width: 27rem;
+}
+
+.btn--third{
+    background-color: $primaryColor;
+    border: 1px solid $white;
+    color: $white;
+    height: 6.5rem;
+    width: 27rem;
+    @include mobile{
+        width: 15rem;
+        height: 4rem;
+        margin-top: 1rem;
+    }
+}
+.btn--third:hover{
+    color: $primaryColor;
+    background-color: $white;
+    cursor: pointer;
+}
+.btn--footer{
+    background-color: #a0a8b5;
+    color: $white;
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    @include mobile{
+        height: 4rem;
+        width: 4rem;
+        font-size: 2rem;
+        color: $primaryColor;
+    }
+}
+.btn--footer:hover{
+    color: $primaryColor;
+    cursor: pointer;
+}
+
+.title--block{
+    font-family: $fontRaleway;
+    font-size: $sizeTitle36;
+    font-weight: 800;
+    @include mobile{
+        font-size: $sizeDesc24;
+    }
+}
+
+.desc--block{
+    font-family: $fontOpenSans;
+    font-size: $sizedesc18;
+    color: $descColor;
+    @include mobile{
+        font-size: 16px;
+    }
+}
+
+.box__shadow{
+    -webkit-box-shadow: 0 0 20px rgb(227 239 240 / 70%);
+            -moz-box-shadow: 0 0 20px rgba(227,239,240,0.70);
+            -ms-box-shadow: 0 0 20px rgba(227,239,240,0.70);
+            -o-box-shadow: 0 0 20px rgba(227,239,240,0.70);
+            box-shadow: 0 0 20px rgb(227 239 240 / 70%);
+}

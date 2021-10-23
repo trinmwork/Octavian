@@ -1,0 +1,184 @@
+.about{
+    position: relative;
+    margin-top: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include mobile{
+        margin-top: 30rem;
+    }
+    &__download{
+        width: 150rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 2rem;
+        background-color: $primaryColor;
+        @include mobile{
+            width: 100%;
+            padding-bottom: 3rem;  
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        &-title{
+            font-family: $fontRaleway;
+            font-size: 6rem;
+            color: $white;
+            font-weight: bold;
+            margin-top: 15rem;
+            margin-bottom: 5.5rem;
+            @include mobile{
+                font-size: 3rem;
+                margin-top: 3rem;
+            }
+        }
+
+        &-desc{
+            font-family: $fontOpenSans;
+            color: $white;
+            font-size: $sizeDesc24;
+            width: 80%;
+            font-weight: 400;
+            margin-bottom: 7rem;
+            @include mobile{
+                font-size: 18px;
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-btn{
+            a{
+                margin-right: 3rem;
+                
+            }
+            
+            
+        }
+        &-img{
+            margin-top: 12rem;
+            width: 42.5rem;
+            height: 58rem;
+            @include mobile{
+                display: none;
+            }
+        }
+    }
+    &__content{
+        padding-top: 50rem;
+        background-color: #282f3a;
+        @include mobile {
+            padding-top: 25rem;
+        }
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        &-app{
+            width: 37rem;
+            @include mobile {
+                width: 100%;
+            }
+        }
+        &-logo{
+            margin-bottom: 5rem;
+            width: 15.4rem;
+            height: 4rem;
+            
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &-desc{
+            font-size: 1.6rem;
+            font-family: $fontOpenSans;
+            color: #a0a8b5;
+            font-weight: 300;
+            margin-bottom: 4.5rem;
+            width: 37rem;
+            line-height: 2;
+            @include mobile {
+                width: 100%;
+            }
+        }
+        &-icon{
+            color: #a0a8b5;
+            font-size: 2rem;
+            i{
+                margin-right: 3rem;
+            }
+
+            i:hover{
+                color: $white;
+                cursor: pointer;
+            }
+        }
+        &-links{
+            display: flex;
+            flex-direction: column;
+            width: 17rem;
+            @include mobile {
+                width: 100%;
+                margin-top: 3rem;
+                
+            }
+            
+        }
+        &-title{
+            margin-bottom: 5rem;
+            color: $white;
+            font-family: $fontRaleway;
+            font-size: 1.8rem;
+            font-weight: 500;
+            @include mobile{
+                margin-bottom: 2rem;
+            }
+        }
+        &-link{
+            font-size: 1.6rem;
+            font-family: $fontOpenSans;
+            color: #a0a8b5;
+            font-weight: 300;
+            margin-bottom: 3.5rem;
+            @include mobile{
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
+        }
+        &-contact{
+            display: flex;
+            flex-direction: column;
+            width: 37rem;
+            @include mobile {
+                width: 100%;
+            }
+        }
+        &-item{
+            margin-bottom: 4rem;
+            font-size: 1.6rem;
+            font-family: $fontOpenSans;
+            color: #a0a8b5;
+            font-weight: 300;
+            @include mobile{
+                font-size: 14px;
+            }
+        }
+    }
+    &__btn{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transform: translateY(-50%);
+        @include mobile{
+            position: fixed;
+            top: 90%;
+            opacity: 0.6;
+            right: 10px;
+        }
+    }
+}

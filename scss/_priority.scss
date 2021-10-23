@@ -1,0 +1,81 @@
+.priority{
+    margin-bottom: 15rem;
+    @include mobile{
+        margin-bottom: 5rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+    &__lists{
+        margin-left: -10rem;
+        display: flex;
+        align-items: center;
+        @include mobile{
+            flex-direction: column;
+            margin-left: 0;
+            width: 100%;
+        }
+        &-item{
+            width: 37rem;
+            height: 32.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            padding-top: 7rem;
+            padding-bottom: 8rem;
+            margin-right: 3rem;
+            &--bgBlue{
+                color: $white;
+                background-color: $primaryColor;
+            }
+            @include mobile{
+                width: 30rem;
+                margin: 1.5rem auto ;
+            }
+        }
+        &-item ~ .priority__lists-item{
+            margin-top: 3rem;
+            @include mobile{
+                margin-top: 0;
+            }
+        }
+        &-icon{
+            height: 10rem;
+            width: 10rem;
+            object-fit: cover;
+        }
+        &-desc{
+            font-family: $fontRaleway;
+            font-size: 2rem;
+            margin-top: 5rem;
+            font-weight: 600;
+        }
+    }
+
+    &__content{
+        margin-left: 10rem;
+        @include mobile{
+           margin-left: 0;
+           text-align: center;
+        }
+        &-title{
+            margin-bottom: 5rem;
+            @include mobile{
+                margin-bottom: 2rem;
+            }
+        }
+        &-desc{
+            margin-bottom: 5rem;
+            @include mobile{
+                margin-bottom: 2rem;
+            }
+        }
+        
+    }
+        
+    
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.wrapper{
+    max-width: $mainWidth;
+    margin: 0 auto;
+    
+}
+.container{
+    max-width: $containerWidth;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+.is-open{
+    transform: translateX(0) !important;
+    transition: all 0.7s;
+}
